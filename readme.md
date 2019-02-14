@@ -12,8 +12,8 @@ if you do have. add the following scripts to your package.json
 
 ```
 "scripts": {
-    "hashe": "node ./node_modules/hashe-builder/index.js",
-    "test": "node ./node_modules/hashe-builder/index.js"
+    "hashe": "node ./node_modules/angularjs-builder/index.js",
+    "test": "node ./node_modules/angularjs-builder/index.js"
  }
  
 ```
