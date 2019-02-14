@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "app.js",
+        "directives/ngIntroOptions.js",
+        "services/constants.js"
+    ]
+}

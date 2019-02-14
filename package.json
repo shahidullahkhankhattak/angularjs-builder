@@ -1,0 +1,39 @@
+{
+  "author": {
+    "name": "Shahid Ullah Khan"
+  },
+  "bugs": {
+    "url": "https://github.com/shahidullahkhankhattak/angularjs-builder/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jsdom": "^13.2.0",
+    "uglify-es": "^3.3.9"
+  },
+  "deprecated": false,
+  "description": "a cli module used to make a build of all angularjs javascript files to resolve cashe issues.",
+  "homepage": "https://github.com/shahidullahkhankhattak/angularjs-builder#readme",
+  "keywords": [
+    "angularjs",
+    "builder",
+    "dist",
+    "serve",
+    "watch",
+    "angularjs",
+    "files",
+    "controllers"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "angularjs-builder",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahidullahkhankhattak/angularjs-builder.git"
+  },
+  "scripts": {
+    "hashe": "node ./node_modules/angularjs-builder/index.js",
+    "test": "node ./node_modules/angularjs-builder/index.js"
+  },
+  "version": "1.0.7"
+}
