@@ -1,4 +1,28 @@
 {
+  "_from": "angularjs-builder",
+  "_id": "angularjs-builder@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-vp7lXbhoUnayS0JepIFTbdwxQiIMFCtJlYD3FwjDlmiiPmTLf4enSHeWezTx3uvs2DJJl2gA4rJbLM4sX2hkaw==",
+  "_location": "/angularjs-builder",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "angularjs-builder",
+    "name": "angularjs-builder",
+    "escapedName": "angularjs-builder",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angularjs-builder/-/angularjs-builder-1.0.8.tgz",
+  "_shasum": "79fa2efd9cdb21762001eb9b98e429753a6b3a83",
+  "_spec": "angularjs-builder",
+  "_where": "/media/karma/Seagate Expansion Drive/work/hashesolutions/Bitbucket/RJ401kProject/401k-frontend",
   "author": {
     "name": "Shahid Ullah Khan"
   },
@@ -35,5 +59,5 @@
     "hashe": "node ./node_modules/angularjs-builder/index.js",
     "test": "node ./node_modules/angularjs-builder/index.js"
   },
-  "version": "1.0.7"
+  "version": "1.0.9"
 }

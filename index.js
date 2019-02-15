@@ -27,6 +27,9 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1) {
             for (let j in distScripts) {
                 console.log("\x1b[0m", "Compressing " + distScripts[j]);
                 totalJs[distScripts[j]] = fs.readFileSync(distScripts[j]).toString('utf8');
+                let scrpt = document.querySelector("script[src='"+distScripts[j]+"']");
+                if(scrpt)
+                document.body.removeChild(scrpt);
             }
             console.log("\x1b[0m", "Making angularjs build... ");
             fs.readdir('.', (err, files) => {
@@ -51,7 +54,7 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1) {
                 let scriptNew = document.createElement("script");
                 scriptNew.src = "main-dist." + uniqueName + ".js";
                 document.body.appendChild(scriptNew);
-                fs.writeFileSync('index.html', document.querySelector("html").outerHTML);
+                fs.writeFileSync('index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
                 console.log("\x1b[32m", "Watching for further files changes ...");
             } else {
                 console.log("\x1b[31m", minified.error);
@@ -69,6 +72,9 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1) {
                 for (let j in distScripts) {
                     console.log("\x1b[0m", "Compressing " + distScripts[j]);
                     totalJs[distScripts[j]] = fs.readFileSync(distScripts[j]).toString('utf8');
+                    let scrpt = document.querySelector("script[src='"+distScripts[j]+"']");
+                    if(scrpt)
+                    document.body.removeChild(scrpt);
                 }
                 console.log("\x1b[0m", "Making angularjs build... ");
                 fs.readdir('.', (err, files) => {
@@ -93,7 +99,7 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1) {
                     let scriptNew = document.createElement("script");
                     scriptNew.src = "main-dist." + uniqueName + ".js";
                     document.body.appendChild(scriptNew);
-                    fs.writeFileSync('index.html', document.querySelector("html").outerHTML);
+                    fs.writeFileSync('index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
                     console.log("\x1b[32m", "Watching for further files changes ...");
                 } else {
                     console.log("\x1b[31m", minified.error);
@@ -109,6 +115,9 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1) {
     for (let j in distScripts) {
         console.log("\x1b[0m", "Compressing " + distScripts[j]);
         totalJs[distScripts[j]] = fs.readFileSync(distScripts[j]).toString('utf8');
+        let scrpt = document.querySelector("script[src='"+distScripts[j]+"']");
+        if(scrpt)
+        document.body.removeChild(scrpt);
     }
     console.log("\x1b[0m", "Making angularjs build... ");
     fs.readdir('.', (err, files) => {
@@ -133,7 +142,7 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1) {
         let scriptNew = document.createElement("script");
         scriptNew.src = "main-dist." + uniqueName + ".js";
         document.body.appendChild(scriptNew);
-        fs.writeFileSync('index.html', document.querySelector("html").outerHTML);
+        fs.writeFileSync('index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
     } else {
         console.log("\x1b[31m", minified.error);
     }
