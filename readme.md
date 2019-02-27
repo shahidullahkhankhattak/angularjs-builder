@@ -44,3 +44,13 @@ to create a build of your javascript files run the below command
 ```
 >  npm run hashe build
 ```
+
+to create a final build of your javascript files ready to go online you can use
+```
+>  npm run hashe dist
+```
+
+you can also provide base url to the dist, and dist will be created with the base url you provided
+```
+>  npm run hashe dist base=yourbaseurl
+```

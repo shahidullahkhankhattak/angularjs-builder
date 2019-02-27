@@ -1,27 +1,27 @@
 {
-  "_from": "angularjs-builder",
-  "_id": "angularjs-builder@1.0.8",
+  "_from": "angularjs-builder@^1.0.9",
+  "_id": "angularjs-builder@1.0.9",
   "_inBundle": false,
-  "_integrity": "sha512-vp7lXbhoUnayS0JepIFTbdwxQiIMFCtJlYD3FwjDlmiiPmTLf4enSHeWezTx3uvs2DJJl2gA4rJbLM4sX2hkaw==",
+  "_integrity": "sha512-KfSirL/p4MeZ+PEz72tK/vkzd6YlrrXnNqcLOBF8L2llk5dQwbg5wUJ4iEX2xpNAiyEYgW5z2dX+pWsViA1/zw==",
   "_location": "/angularjs-builder",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "angularjs-builder",
+    "raw": "angularjs-builder@^1.0.9",
     "name": "angularjs-builder",
     "escapedName": "angularjs-builder",
-    "rawSpec": "",
+    "rawSpec": "^1.0.9",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "^1.0.9"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angularjs-builder/-/angularjs-builder-1.0.8.tgz",
-  "_shasum": "79fa2efd9cdb21762001eb9b98e429753a6b3a83",
-  "_spec": "angularjs-builder",
+  "_resolved": "https://registry.npmjs.org/angularjs-builder/-/angularjs-builder-1.0.9.tgz",
+  "_shasum": "5cd4dce36a80ab8a015dde4d32cdec8d40a4c0bb",
+  "_spec": "angularjs-builder@^1.0.9",
   "_where": "/media/karma/Seagate Expansion Drive/work/hashesolutions/Bitbucket/RJ401kProject/401k-frontend",
   "author": {
     "name": "Shahid Ullah Khan"
@@ -32,7 +32,9 @@
   "bundleDependencies": false,
   "dependencies": {
     "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1",
     "jsdom": "^13.2.0",
+    "rimraf": "^2.6.3",
     "uglify-es": "^3.3.9"
   },
   "deprecated": false,
@@ -59,5 +61,5 @@
     "hashe": "node ./node_modules/angularjs-builder/index.js",
     "test": "node ./node_modules/angularjs-builder/index.js"
   },
-  "version": "1.0.9"
+  "version": "1.1.0"
 }
