@@ -61,5 +61,5 @@
     "hashe": "node ./node_modules/angularjs-builder/index.js",
     "test": "node ./node_modules/angularjs-builder/index.js"
   },
-  "version": "1.1.0"
+  "version": "1.1.2"
 }
