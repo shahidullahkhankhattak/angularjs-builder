@@ -10,6 +10,20 @@ const {
 let distScripts = JSON.parse(fs.readFileSync("hasheconfig.json").toString('utf8')).scripts;
 /* libraries imports ends */
 
+// add main-dist and node modules to gitignore if not exist
+if(fs.existsSync(".gitignore")){
+    let gitIgnore = fs.readFileSync(".gitignore").toString('utf8');
+    if(gitIgnore.indexOf("main-dist*.js") == -1){
+        if(gitIgnore.indexOf("node_modules") == -1){
+            gitIgnore += "\nnode_modules";
+        }
+        gitIgnore += "\nmain-dist*.js";
+    }
+    fs.writeFileSync(".gitignore", gitIgnore);
+}else{
+    fs.writeFileSync(".gitignore", "node_modules\nmain-dist*.js");
+}
+
 //get the index files
 let index = fs.readFileSync('index.html').toString('utf8');
 
@@ -233,14 +247,14 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1 && args.indexOf('
         fsExtra.copy("assets", "dist/assets", function(err){});
         fsExtra.copy("views", "dist/views", function(err){});
         fsExtra.copy("main-dist." + uniqueName + ".js", "dist/main-dist." + uniqueName + ".js", function(err){});
-        if(args.filter(arg => arg.indexOf("base=")).length > 0){
+        if(args.filter(arg => arg.indexOf("base=") > -1).length > 0){
             let baseUrl = args.filter(arg => arg.indexOf("base=") > -1)[0].split("=")[1];
             let base = document.querySelector("base");
             if(base){
                 base.href = baseUrl;
             }
-            fs.writeFileSync('dist/index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
         }
+        fs.writeFileSync('dist/index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
         console.log("\x1b[32m", "dist created successfully"); 
     } else {
         console.log("\x1b[31m", minified.error);
