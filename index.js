@@ -243,15 +243,16 @@ if (args.indexOf('serve') == -1 && args.indexOf('build') == -1 && args.indexOf('
         fsExtra.copy("assets", "dist/assets", function(err){});
         fsExtra.copy("views", "dist/views", function(err){});
         fs.writeFileSync("dist/main-dist." + uniqueName + ".js", minified.code);
-        fs.writeFileSync('dist/index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
-
-        if(args.filter(arg => arg.indexOf("base=") > -1).length > 0){
+	if(args.filter(arg => arg.indexOf("base=") > -1).length > 0){
             let baseUrl = args.filter(arg => arg.indexOf("base=") > -1)[0].split("=")[1];
             let base = document.querySelector("base");
             if(base){
                 base.href = baseUrl;
             }
         }
+        fs.writeFileSync('dist/index.html', "<!doctype html>\n" + document.querySelector("html").outerHTML);
+
+        
         console.log("\x1b[32m", "dist created successfully"); 
     } else {
         console.log("\x1b[31m", minified.error);

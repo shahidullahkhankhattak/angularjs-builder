@@ -1,28 +1,28 @@
 {
-  "_from": "angularjs-builder@^1.0.9",
-  "_id": "angularjs-builder@1.1.4",
+  "_from": "angularjs-builder@^1.1.5",
+  "_id": "angularjs-builder@1.1.5",
   "_inBundle": false,
-  "_integrity": "sha512-8Aw72AvY6ED+4Ds8epszyHagRm5hiRw/ESiR1ro8b3MHGIyExvcQ9syrak4w96zs74z7l522XAfWxDBbW4etvQ==",
+  "_integrity": "sha512-jcamYjuKjNv+JGCPnfMSjlcrlAxCKpMB00twLvoi6nV+18XaKrLGBixK5sZoJvut5LUUZXzdCcDcFzghMfbx2g==",
   "_location": "/angularjs-builder",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "angularjs-builder@^1.0.9",
+    "raw": "angularjs-builder@^1.1.5",
     "name": "angularjs-builder",
     "escapedName": "angularjs-builder",
-    "rawSpec": "^1.0.9",
+    "rawSpec": "^1.1.5",
     "saveSpec": null,
-    "fetchSpec": "^1.0.9"
+    "fetchSpec": "^1.1.5"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/angularjs-builder/-/angularjs-builder-1.1.4.tgz",
-  "_shasum": "90cae2b318fe4cf77f7b4e56037f3c9d7cf25d1a",
-  "_spec": "angularjs-builder@^1.0.9",
-  "_where": "/media/karma/Seagate Expansion Drive/work/hashesolutions/Bitbucket/RJ401kProject/401k-admin",
+  "_resolved": "https://registry.npmjs.org/angularjs-builder/-/angularjs-builder-1.1.5.tgz",
+  "_shasum": "53ec1b011d524ea3ce54d13af8abf56b16ef43a1",
+  "_spec": "angularjs-builder@^1.1.5",
+  "_where": "/media/karma/Seagate Expansion Drive/work/hashesolutions/Bitbucket/401kProject/401k-admin",
   "author": {
     "name": "Shahid Ullah Khan"
   },
@@ -61,5 +61,5 @@
     "hashe": "node ./node_modules/angularjs-builder/index.js",
     "test": "node ./node_modules/angularjs-builder/index.js"
   },
-  "version": "1.1.5"
+  "version": "1.1.6"
 }
