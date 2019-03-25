@@ -1,3 +1,4 @@
+
 {
   "_from": "angularjs-builder@^1.1.5",
   "_id": "angularjs-builder@1.1.5",
@@ -61,5 +62,5 @@
     "hashe": "node ./node_modules/angularjs-builder/index.js",
     "test": "node ./node_modules/angularjs-builder/index.js"
   },
-  "version": "1.1.6"
+  "version": "1.1.7"
 }
