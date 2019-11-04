@@ -4,9 +4,9 @@
 
 [![Build Status](https://shahidullahkhan.com/images/passing.svg)](https://travis-ci.org/joemccann/dillinger)
 
-npm module to build all your angularjs javascript files and make a dist of your project to prevent cache issues
+##### npm module to build all your angularjs javascript files and make a dist of your project to prevent cache issues
 
-#installation
+# installation
 run following command:
 
 ```>  npm install angularjs-builder --save```
