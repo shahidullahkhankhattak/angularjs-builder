@@ -23,7 +23,7 @@ if you do have. add the following scripts to your package.json
  
 ```
 
-## how to use
+## Usage
 in your main directory create a file named **hasheconfig.json** and include all your scripts as shown below.
 
 
