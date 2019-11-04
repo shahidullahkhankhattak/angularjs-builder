@@ -6,12 +6,12 @@
 
 ##### npm module to build all your angularjs javascript files and make a dist of your project to prevent cache issues
 
-## installation
+## Installation
 run following command:
 
 ```>  npm install angularjs-builder --save```
 
-## requirements
+## Requirements
 please add the **package.json** file available in the repository if you don't have a package.json in your project.
 if you do have. add the following scripts to your package.json
 
