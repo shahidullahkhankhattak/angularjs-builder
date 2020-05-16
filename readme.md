@@ -2,7 +2,7 @@
 
 [![N|Solid](https://shahidullahkhan.com/images/powered.png)](https://shahidullahkhan.com)
 
-[![Build Status](https://shahidullahkhan.com/images/passing.svg)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://shahidullahkhan.com/images/passing.svg)](https://shahidullahkhan.com)
 
 ##### npm module to build all your angularjs javascript files and make a dist of your project to prevent cache issues
 
